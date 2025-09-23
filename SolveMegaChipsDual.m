@@ -1,3 +1,11 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Author:   Edward E. Daisey
+%     Class:   Introduction to Optimization (625.615)
+% Professor:   Dr. David Schug
+%      Date:   15th of September, 2025
+%     Title:   Module 3 Assignment
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Results %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Optimal Dual Solution (Shadow Prices):
 %     y_Labor:    $1.00
@@ -70,4 +78,5 @@ function SolveMegaChipsDual()
    fprintf('------------------------------------\n');
    fprintf('Minimum Resource Value: $%.2f\n', minCost);
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 end
