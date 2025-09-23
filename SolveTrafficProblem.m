@@ -21,7 +21,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 function SolveOptimizationProblem()
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Hessian (?²f) %%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Hessian (?Â²f) %%%%%%%%%%%%%%%%%%%%%%%%%%
     % Compute the second-order partial derivatives (Hessian of f):
     hessianF = @(x1, x2, x3) [    6,  -9*x3,  -9*x2;
                               -9*x3,      8,  -9*x1;
