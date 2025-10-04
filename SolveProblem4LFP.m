@@ -2,7 +2,7 @@
 %    Author:   Edward E. Daisey
 %     Class:   Introduction to Optimization (625.615)
 % Professor:   Dr. David Schug
-%      Date:   28-Sep-2025
+%      Date:   28th of September, 2025
 %     Title:   Module 5 - Problem 4B
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -87,4 +87,5 @@ function SolveProblem4LFP()
     fprintf('Check: x1 + 3 x2 = %.2f (<= 50)\n', check1);
     fprintf('Check: 5 x1 + 2 x2 = %.2f (<= 70)\n', check2);
 end
+
 
