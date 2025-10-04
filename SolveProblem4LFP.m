@@ -5,6 +5,8 @@
 %      Date:   28-Sep-2025
 %     Title:   Module 5 - Problem 4B
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Results %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Original Formulation:
 %   max (4 x1 + 6 x2 + 12) / (3 x1 + 7 x2 + 50)
 %   s.t.  x1 + 3 x2 <= 50
@@ -85,3 +87,4 @@ function SolveProblem4LFP()
     fprintf('Check: x1 + 3 x2 = %.2f (<= 50)\n', check1);
     fprintf('Check: 5 x1 + 2 x2 = %.2f (<= 70)\n', check2);
 end
+
