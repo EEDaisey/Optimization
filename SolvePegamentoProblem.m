@@ -3,7 +3,7 @@
 %     Class:   Introduction to Optimization (625.615)
 % Professor:   Dr. David Schug
 %      Date:   6th of October, 2025
-%     Title:   Module 3 Assignment
+%     Title:   Module 6 Assignment
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Results %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,3 +63,4 @@ function SolvePegamentoProblem()
     fprintf('Minimum Cost: $%.2f\n', fval);
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 end
+
