@@ -18,7 +18,7 @@
 % Goal-attainment form (all goals treated as soft):
 %   G1:  Customer 2 should receive all 250 units       (C2 = 250)
 %   G2:  At least 80 units from Baltimore to Cust 4    (x34 >= 80)
-%   G3.1–G3.4: At least 80% of demand for each customer
+%   G3.1â€“G3.4: At least 80% of demand for each customer
 %       C1: >= 416, C2: >= 200, C3: >= 320, C4: >= 304
 %   G4:  Total transportation cost <= 24,750
 %   G5:  No units from Atlanta to Customer 1 (x21 = 0)
@@ -88,10 +88,10 @@ function SolveWidgetGoalAttainment()
     cvec = [22 17 30 18, 15 35 20 25, 28 21 16 14];
 
     % Goal importance weights (relative):
-    %   G1, G2, G3.1–G3.4, G4, G5
+    %   G1, G2, G3.1â€“G3.4, G4, G5
     w1 = 36;               % Goal 1
     w2 = 18;               % Goal 2
-    w3 = 6;                % Goals 3.1–3.4
+    w3 = 6;                % Goals 3.1â€“3.4
     w4 = 3;                % Goal 4
     w5 = 1;                % Goal 5
 
@@ -264,7 +264,8 @@ end
 %   - G3.3: Customer 3 does NOT reach 80% of demand (308.24 < 320).
 %   - G3.4: Customer 4 does NOT reach 80% of demand (292.24 < 304).
 %   - G4:   Total cost exceeds 24,750 (overrun ~ 3,030.64).
-%   - G5:   Atlanta->Customer 1 route is used (? 70.54 units shipped).
+%   - G5:   Atlanta->Customer 1 route is used (~ 70.54 units shipped).
 %
-%   Goals G2 (Baltimore?C4 ? 80 units) and G3.2 (C2 ? 80% demand) ARE met.
+%   Goals G2 (Baltimore?C4 >= 80 units) and G3.2 (C2 >= 80% demand) ARE met.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
