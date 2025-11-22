@@ -14,7 +14,7 @@
 %     Critical Point 2: (Nonzero Points) - Saddle Points
 %
 % Mathematical Analysis:
-% The function is analyzed by solving ?f(x) = 0 (i.e., finding the critical points).
+% The function is analyzed by solving Grad[f(x)] = 0 (i.e., finding the critical points).
 % The Hessian matrix at each critical point is then computed to classify the points
 % based on the eigenvalues of the Hessian matrix:
 %     - Local Minimum: All eigenvalues of the Hessian are positive.
@@ -29,7 +29,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 function SolveOptimizationProblem()
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Hessian (?²f) %%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Hessian (Grad²[f]) %%%%%%%%%%%%%%%%%%%%%%%%%%
     % Compute the second-order partial derivatives (Hessian of f):
     hessianF = @(x1, x2, x3) [    6,  -9*x3,  -9*x2;
                               -9*x3,      8,  -9*x1;
@@ -37,7 +37,7 @@ function SolveOptimizationProblem()
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Analysis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % Solve for critical points by solving ?f = 0:
+    % Solve for critical points by solving Grad[f] = 0:
     syms x1 x2 x3;
     sol = solve([6*x1 - 9*x2*x3 == 0, ...
                  8*x2 - 9*x1*x3 == 0, ...
@@ -114,4 +114,5 @@ function SolveOptimizationProblem()
         end
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
